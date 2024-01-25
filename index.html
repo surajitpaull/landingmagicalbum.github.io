@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Poppins:wght@100;300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <ul class="navbar-main">
+            <li class="ul-li"><a href="#home"><img src="/images/home.svg" alt="Home"> Home</a></li>
+            <li class="ul-li"><a href="#shop"><img src="/images/shop.svg" alt="Shop"> Shop</a></li>
+            <li class="ul-li"><a href="#gold"><img src="/images/Frame.svg" alt="Gold"> Gold</a></li>
+            <li class="logo"><a href="#home"><img src="/images/Vector.svg" alt="Company Logo"></a></li>
+            <li class="ul-li"><a href="#help"><img src="/images/help.svg" alt="Help"> Help</a></li>
+            <li class="ul-li"><a href="#account"><img src="/images/account.svg" alt="Account"> Account</a></li>
+            <li class="ul-li"><a href="#cart"><img src="/images/cart.svg" alt="Cart"> Cart</a></li>
+
+            <div class="menu-container">
+                <button id="menu-btn" onclick="toggleMenu()"><img src="/images/menu-btn.svg" alt="Menu"></button>
+                <button id="close-btn" onclick="toggleMenu()"><img src="/images/cross.svg" alt="Close"></button>
+                <button id="shop-btn" class="mobile-only" onclick="handleShopClick()"><img src="/images/cart.svg" alt="Shop"></button>
+                <button id="user-btn" class="mobile-only" onclick="handleUserClick()"><img src="/images/account.svg" alt="User"></button>
+            </div>
+        </ul>
+
+        <!-- Mobile menu -->
+        <div class="mobile-menu">
+            <!-- Mobile menu items go here -->
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+
+        </div>
+
+    </nav>
+
+    <!-- mobile section -->
+
+    <section class="scroll-section">
+        <div class="container">
+            <div class="image-container">
+                <img src="/images/Thumbnail.jpg" alt="Main Image" class="main-image">
+                <video src="/images/Sequence 01_5 (1).mp4" class="hover-video" loop muted autoplay></video>
+            </div>
+            <div class="content">
+                <h1 class="multi-color-heading mobile-heading">Add <span class="magic-color">Magic</span><br> to your Photos</h1>
+
+                <h1 class="multi-color-heading desktop-heading">Add <span class="magic-color">Magic</span><br> to your <br> Photos</h1>
+
+                <p class="magic-content">Sprinkle a bit of magic on your pics! With the <br>Magic Album app, your
+                    everyday photos <br> transform into something way cooler</p>
+
+                <p class="magic-content-mobile">Sprinkle a bit of magic on your pics! With <br> the Magic Album app</p>   
+
+                    <div class="image-container-mobile">
+                        <video src="/images/Sequence 01_5 (1).mp4" class="mobile-video" loop muted autoplay></video>
+                    </div>   
+              
+
+                <p class="downlode-text">Download now for Free :</p>
+
+                <!-- Google Play Download Button -->
+                <div class="downlode-class">
+
+                    <a href="" class="download-btn playstore">
+                        <img src="/images/playstore.svg" alt="Get it on Google Play">
+                    </a>
+
+                    <!-- App Store Download Button -->
+                    <a href="" class="download-btn appstore">
+                        <img src="/images/appstore.svg" alt="Download on the App Store">
+                    </a>
+                </div>
+
+<!-- image property -->
+                <div class="round-images">
+                    <div class="profile-pic" id="profile-pic-1"></div>
+                    <div class="profile-pic" id="profile-pic-3"></div>
+                    <div class="profile-pic" id="profile-pic-2"></div>
+                    <div class="follower-count">
+                        <p>1k+</p>
+                    </div>
+                </div>
+                <p class="conclusion">"Bringing smiles to many, every day."</p>
+
+            </div>
+              
+        </div>
+    </section>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
