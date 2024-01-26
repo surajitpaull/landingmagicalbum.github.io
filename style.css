@@ -2,6 +2,7 @@ body {
     margin: 0;
     font-family: 'Lato', sans-serif;
     font-family: 'Poppins', sans-serif;
+    
 }
 
 .navbar {
@@ -159,6 +160,7 @@ body {
     height: 750px; 
     overflow: hidden;
     margin-right: 20px;
+    
 }
 
 img {
@@ -574,3 +576,54 @@ h2 {
       margin-top: 5vh;
     }
   }
+
+
+
+
+
+  /* Update image and video container widths for responsiveness */
+.image-container {
+    width: 100%;
+    max-width: 750px; /* Set a maximum width for larger screens */
+    height: auto; /* Ensure height adjusts proportionally */
+}
+
+.image-container-mobile {
+    display: none; /* Initially hidden on larger screens */
+}
+
+/* Update video styles for responsiveness */
+.mobile-video {
+    max-width: 100%; /* Ensure video width adjusts to container */
+    height: auto; /* Ensure video height adjusts proportionally */
+}
+
+/* Update mobile heading styles */
+.mobile-heading {
+    display: none; /* Initially hidden on larger screens */
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Update content styles for responsiveness */
+.content {
+    margin-right: auto;
+    text-align: center;
+}
+
+/* Additional mobile-specific styles */
+@media screen and (max-width: 600px) {
+    .image-container {
+        max-width: 100%; /* Adjust maximum width for smaller screens */
+    }
+
+    .image-container-mobile {
+        display: block; /* Show on smaller screens */
+    }
+
+    .mobile-heading {
+        display: block; /* Show on smaller screens */
+    }
+
+    /* Add any other necessary mobile-specific styles */
+}
