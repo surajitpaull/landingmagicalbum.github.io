@@ -15,29 +15,34 @@
 
     <nav class="navbar">
         <ul class="navbar-main">
-            <li class="ul-li"><a href="#home"><img src="assets/images/home.svg" alt="Home"> Home</a></li>
+            <li class="ul-li"><a href="#home" id="home"><img src="assets/images/home.svg" alt="Home"> Home</a></li>
             <li class="ul-li"><a href="#shop"><img src="assets/images/shop.svg" alt="Shop"> Shop</a></li>
-            <li class="ul-li"><a href="#gold"><img src="assets/images/Frame.svg" alt="Gold"> Gold</a></li>
-            <li class="logo"><a href="#home"><img src="assets/images/Vector.svg" alt="Company Logo"></a></li>
+            <li class="ul-li"><a href="#gold" id="gold-link"><img src="assets/images/magicgold.svg" alt="Gold"> Gold</a></li>
+
+
+            <li class="logo"><img src="assets/images/Vector.svg" alt="Company Logo"></li>
+
             <li class="ul-li"><a href="#help"><img src="assets/images/help.svg" alt="Help"> Help</a></li>
             <li class="ul-li"><a href="#account"><img src="assets/images/account.svg" alt="Account"> Account</a></li>
             <li class="ul-li"><a href="#cart"><img src="assets/images/cart.svg" alt="Cart"> Cart</a></li>
 
             <div class="menu-container">
+                
                 <button id="menu-btn" onclick="toggleMenu()"><img src="assets/images/menu-btn.svg" alt="Menu"></button>
                 <button id="close-btn" onclick="toggleMenu()"><img src="assets/images/cross.svg" alt="Close"></button>
                 <button id="shop-btn" class="mobile-only" onclick="handleShopClick()"><img src="assets/images/cart.svg" alt="Shop"></button>
                 <button id="user-btn" class="mobile-only" onclick="handleUserClick()"><img src="assets/images/account.svg" alt="User"></button>
+                
             </div>
         </ul>
 
         <!-- Mobile menu -->
         <div class="mobile-menu">
             <!-- Mobile menu items go here -->
+            <a class="gold" href="">Gold</a>
             <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-
+            <a href="menufolder/about us/aboutus.html">About</a>
+            <a href="menufolder/contact/contact.html">Contact</a>
         </div>
 
     </nav>
@@ -51,7 +56,7 @@
                 <video src="assets/images/Sequence 01_5 (1).mp4" class="hover-video" loop muted autoplay></video>
             </div>
             <div class="content">
-                <h1 class="multi-color-heading mobile-heading">Add <span class="magic-color">Magic</span><br> to your Photos</h1>
+                <h1 class="multi-color-heading mobile-heading">Add <span class="magic-color">Magic </span> to<br>your Photos</h1>
 
                 <h1 class="multi-color-heading desktop-heading">Add <span class="magic-color">Magic</span><br> to your <br> Photos</h1>
 
@@ -96,6 +101,8 @@
         </div>
     </section>
 
+
+    <h2>"Our Website is Up and Running! <br> Exciting Updates Coming Soon!"</h2>
 
 
     <script src="script.js"></script>

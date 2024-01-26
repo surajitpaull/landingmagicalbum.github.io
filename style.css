@@ -5,32 +5,63 @@ body {
 }
 
 .navbar {
+    height: 86px;
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
     text-align: center;
-    border-radius: 42px;
     max-width: 90%;
 }
-.navbar-main{
+
+.navbar-main{    
     max-width: 100%;
     border: 1px solid #C5C5C5;    
-    background: #000;
-    border-radius: 42px;
+    background: #000000;
+    border-radius: 50px;
     height: 66px;
     display: flex;
     align-items: center;
 }
 .navbar ul {
+    height: 86px;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    padding-left: auto;
     display: flex;
     margin: auto;
-    justify-content: space-between;
-    
+    justify-content:space-around;
+    align-items: center;
+    margin-left: auto;
+    border-radius: 50px;
+    overflow: hidden;
 }
+/* different screen resulition */
+.navbar-main .ul-li a {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Styles for desktop screens */
+
+@media screen and (max-width: 1300px) {
+    .navbar-main .ul-li a {
+        font-size: 0;
+    }
+
+    /* Adjust layout to only display images */
+    .navbar-main .ul-li a img {
+        width: 30px; 
+        height: 30px;
+    }
+}
+/* goldpage */
+#gold-link {
+    
+    color: gold;
+}
+
 /* for mobile displacement  */
 #shop-btn,
 #user-btn {
@@ -52,7 +83,7 @@ body {
     align-items: center;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 18px 30px;
     text-decoration: none;
     transition: background 0.3s; 
     margin-left: 7px;
@@ -61,8 +92,8 @@ body {
 
 .navbar a:hover {
     background: #555; 
-    border-radius: 76px;
-    
+    border-radius: 50px;
+        
 }
 .navbar a:active {
     background-color: #00A3FF; 
@@ -70,22 +101,22 @@ body {
 .navbar a img {
     max-width: 110px;
     height: auto;
-    margin-right: 8px; 
+    margin-right: 5px; 
     vertical-align: middle;
 }
-.navbar-main .logo a {
+.navbar-main {
     display: flex;
     align-items: center;
     color: white;
     text-decoration: none;
 }
 
-.navbar-main .logo a:hover {
+.navbar-main a:hover {
     background-image: url("/images/Vector-hover.svg"); 
     
 }
 
-.navbar-main .logo a {
+.navbar-main {
     display: flex;
     align-items: center;
     color: white;
@@ -93,11 +124,21 @@ body {
     transition: background 0.3s;
 }
 
-.logo img{
-    max-width: 307px;
-    height: 86px;
+.logo{
+    width: 199.514px;
+    height: 44px;
+    padding: 21px 53.486px 21px 54px;
     justify-content: center;
     align-items: center;
+    display: flex; 
+    
+}
+.logo img{
+    width: fit-content;
+    padding: 21px 53.486px 21px 54px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 /* mobile section  */
@@ -154,9 +195,9 @@ h1{
     font-family: Poppins;
     font-size: 96px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 110%; /* 105.6px */
-    letter-spacing: -3.84px;
+    letter-spacing: -1.6px;
     color: #1F1F1F;
 }
 
@@ -178,7 +219,7 @@ h1{
     font-style: normal;
     font-weight: 600;
     line-height: 110%;
-    letter-spacing: -3.84px;
+    letter-spacing: -1.6px;
     background-clip: text;
 }
 .magic-content{
@@ -229,7 +270,6 @@ h1{
     background-color: #007bff; 
     margin-right: -10px;
     border: 3px solid #FFF;
-
 }
 
 .follower-count {
@@ -292,13 +332,25 @@ h1{
 
 
 @media screen and (max-width: 600px) {
-
+    
     .navbar-main{
         height: 50px;
+        border: 1px solid #DEDEDE;
+        border-radius: 50px;
+    }
+    .navbar ul {
+        height: 50px;
+        
     }
     .logo{
-        height: 50px;
-        width: 161px;
+        padding: 0;
+        margin-inline-end: auto;
+    }
+    .logo img{
+        height: 31.402px;
+        width: 142.387px;
+        padding: 0;
+        margin-inline-end: auto;
     }
     .container {
         flex-direction: column;
@@ -309,6 +361,7 @@ h1{
     .ul-li{
         display: none;
     }
+
     #menu-btn {
         display: block; 
         
@@ -329,9 +382,10 @@ h1{
     .menu-container{
         display: flex;
         flex-direction: row-reverse;
+        
     }
 
-    /* image container  */
+    /* image container  */  
     .image-container{
         display: none;
     }
@@ -354,7 +408,8 @@ h1{
         font-family: Poppins;
         font-size: 40px;
         color: #1F1F1F;
-        margin-top: -54px;
+        margin-top: -78px;
+        margin-bottom: 16px;
     }
     .magic-color{
         font-size: 40px;
@@ -372,7 +427,7 @@ h1{
         font-weight: 400;
         line-height: 130%; /* 18.2px */
         letter-spacing: -0.56px;
-        margin-bottom: 10px;
+        margin-bottom: 14px;
     }
     /* videopart */
 
@@ -419,7 +474,7 @@ h1{
     }
 
     .download-btn img {
-        height: 40px; 
+        height: 44px; 
         width: auto; 
     }
 
@@ -429,7 +484,7 @@ h1{
 
     .downlode-class a {
         display: inline-block; 
-        margin-right: 10px; 
+        margin-right: 16px; 
     }
 
     .playstore {
@@ -465,12 +520,13 @@ h1{
         font-size: 14px; 
     }
 }
+ /* mobile menu desing  */
 
 .mobile-menu {
     display: none;
     z-index: 9999;
     position: fixed;
-    top: 90px; 
+    margin-top: 20px; 
     left: 50%;
     transform: translateX(-50%);
     width: 85%; 
@@ -492,5 +548,29 @@ h1{
     border-radius: 50px;
     color: #000000;
 }
+.mobile-menu .gold {
+    color: gold;    
+}
+.mobile-menu .gold:hover {
+    color: #ECF0F1;
+    background-color: gold;   
+}
 
+/* update  */
 
+h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #007bff;
+    margin: 20px 0;
+    text-align: center;
+    margin-top: 10vh;
+  }
+
+  @media only screen and (max-width: 600px) {
+    h2 {
+      font-size: 18px; 
+      margin: 10px auto;
+      margin-top: 5vh;
+    }
+  }
