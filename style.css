@@ -589,13 +589,13 @@ h2 {
 }
 
 .image-container-mobile {
-    display: none; /* Initially hidden on larger screens */
+    display: none; 
 }
 
 /* Update video styles for responsiveness */
 .mobile-video {
-    max-width: 100%; /* Ensure video width adjusts to container */
-    height: auto; /* Ensure video height adjusts proportionally */
+    max-width: 100%; 
+    height: auto; 
 }
 
 /* Update mobile heading styles */
