@@ -156,8 +156,9 @@ body {
 .image-container {
     display: block;
     position: relative;
-    width: 750px;
-    height: 750px; 
+    width: 100%;
+    max-width: 750px; 
+    max-height: 750px;  
     overflow: hidden;
     margin-right: 20px;
     
@@ -481,16 +482,17 @@ h1{
     }
 
     .downlode-class {
+        margin-right: auto;
         text-align: center; 
     }
 
     .downlode-class a {
         display: inline-block; 
-        margin-right: 16px; 
+ 
     }
 
     .playstore {
-        margin-right: 0; 
+        margin-right: 16px; 
     }
 
     .appstore img {
@@ -579,18 +581,8 @@ h2 {
 
 
 
-
-
   /* Update image and video container widths for responsiveness */
-.image-container {
-    width: 100%;
-    max-width: 750px; /* Set a maximum width for larger screens */
-    height: auto; /* Ensure height adjusts proportionally */
-}
 
-.image-container-mobile {
-    display: none; 
-}
 
 /* Update video styles for responsiveness */
 .mobile-video {
@@ -598,31 +590,19 @@ h2 {
     height: auto; 
 }
 
-/* Update mobile heading styles */
-.mobile-heading {
-    display: none; /* Initially hidden on larger screens */
-    font-size: 24px;
-    text-align: center;
-}
-
-/* Update content styles for responsiveness */
-.content {
-    margin-right: auto;
-    text-align: center;
-}
 
 /* Additional mobile-specific styles */
 @media screen and (max-width: 600px) {
     .image-container {
-        max-width: 100%; /* Adjust maximum width for smaller screens */
+        max-width: 100%; 
     }
 
     .image-container-mobile {
-        display: block; /* Show on smaller screens */
+        display: block; 
     }
 
     .mobile-heading {
-        display: block; /* Show on smaller screens */
+        display: block; 
     }
 
     /* Add any other necessary mobile-specific styles */
