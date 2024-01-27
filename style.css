@@ -413,7 +413,11 @@ h1{
         flex-direction: row-reverse;
         
     }
+    .mobile-menu{
+        display: block;
+        top: 85px;
 
+    }
     /* image container  */  
     .image-container{
         display: none;
@@ -554,9 +558,8 @@ h1{
 
 .mobile-menu {
     display: none;
-    z-index: 9999;
-    position: fixed;
-    margin-top: 20px; 
+    z-index: 1001;
+    position: fixed; 
     left: 50%;
     transform: translateX(-50%);
     width: 85%; 
@@ -564,6 +567,7 @@ h1{
     padding: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
     border-radius: 23px;
+    
 }
 
 .mobile-menu a {
