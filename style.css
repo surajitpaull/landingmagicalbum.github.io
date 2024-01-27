@@ -354,6 +354,7 @@ h1{
         width: 142.387px;
         padding: 0;
         margin-inline-end: auto;
+        margin-left: -13px;
     }
     .container {
         flex-direction: column;
