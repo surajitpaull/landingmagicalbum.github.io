@@ -54,3 +54,29 @@ window.addEventListener('scroll', function() {
         navbar.classList.remove('sticky');
     }
 });
+
+// random image / Unsplash API
+async function getRandomImageUrl() {
+    try {
+        const response = await fetch('https://source.unsplash.com/random/50x50/?face people ');
+        if (!response.ok) {
+            throw new Error('Failed to fetch image');
+        }
+        return response.url; // Return random image
+    } catch (error) {
+        console.error('Error fetching image:', error);
+        return null;
+    }
+}
+// Replace profile picture 
+async function replaceProfilePictures() {
+    var profilePics = document.querySelectorAll('.profile-pic');
+    for (let i = 0; i < profilePics.length; i++) {
+        var randomImageUrl = await getRandomImageUrl();
+        if (randomImageUrl) {
+            profilePics[i].style.backgroundImage = 'url(' + randomImageUrl + ')';
+        }
+    }
+}
+
+replaceProfilePictures();
