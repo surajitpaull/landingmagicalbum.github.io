@@ -15,19 +15,22 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
-    transition: top 1.3s ease; /* Smooth transition effect */
+    transition: top .3s ease; /* Smooth transition effect */
 }
-.navbar.sticky {
-   
+.navbar.sticky {   
     max-width: 100%;
     border-radius: 0;
+    opacity: .6;
 }
-
+.navbar:hover {
+    /* Set full opacity when mouse hovers over the navbar */
+    opacity: 1;
+}
 /* Show the navigation bar when scrolled up */
 
 .navbar.sticky ul {
     border-radius: 0; /* Remove border radius when navbar becomes sticky */
-    transition: all 0.3s ease;
+    transition: all .5s ease;
 }
 .navbar-main{    
     max-width: 100%;
@@ -363,6 +366,7 @@ h1{
     .navbar.sticky {
         max-width: 90%; /* Set max-width to 90% for mobile screens */
         transition: none;
+        opacity: 1;
     }
     .navbar.sticky ul {
         border-radius: 50px; /* Remove border radius when navbar becomes sticky */
