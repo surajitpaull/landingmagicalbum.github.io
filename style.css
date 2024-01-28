@@ -640,3 +640,89 @@ h2 {
         max-width: fit-content;
     }
 }
+
+
+/* footer section  */
+
+/* Footer styles */
+/* Footer styles */
+footer {
+    background: #01234B;
+    padding: 40px 0;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto; 
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+footer p {
+    color: white;
+}
+/* Left and right sections */
+.footer-left, .footer-right {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(50% - 20px); /* Adjust for padding */
+    padding: 0 10px;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* Company logo */
+.footer-left img {
+    width: 100%;
+    max-width: 200px; /* Limit maximum width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove bottom margin */
+    margin: 0 auto 20px; /* Center and add bottom margin */
+}
+
+/* Download button */
+.footer-right button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.footer-right button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Footer links */
+.footer-right p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: white;
+}
+
+/* Social media icons */
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px; /* Adjust spacing between icons */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.social-icons a:hover {
+    transform: scale(1.2); /* Scale up on hover */
+}
+
+.social-icons img {
+    width: 30px;
+    height: auto;
+}
+
+/* Make the footer responsive */
+@media (max-width: 768px) {
+    .footer-left, .footer-right {
+        width: 100%;
+    }
+}
