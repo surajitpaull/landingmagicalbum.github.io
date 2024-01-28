@@ -692,14 +692,26 @@ footer p {
 .footer-right button:hover {
     background-color: #0056b3; /* Darker shade on hover */
 }
-
+.footer-p{
+    margin-bottom: 15px;
+    color: #C4C4C4;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 119.25%;    
+}
 /* Footer links */
 .footer-right p {
     margin-top: 20px;
     font-size: 14px;
     color: white;
 }
-
+.footer-store img{
+    width: 151.544px;
+    height: 45px;
+    
+}
 /* Social media icons */
 .social-icons {
     margin-top: 20px;
@@ -716,8 +728,32 @@ footer p {
 }
 
 .social-icons img {
-    width: 30px;
-    height: auto;
+    width: 40px;
+    height: 40px;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-btn {
+    display: inline-flex;
+    align-items: center; 
+    justify-content: center; 
+    text-decoration: none;
+    border-radius: 50%; 
+    margin-right: 10px; 
+    width: 40px; 
+    height: 40px;
+    transition: background-color 0.3s ease; 
+}
+
+.social-btn i {
+    line-height: 40px; 
+}
+
+.social-btn:hover {
+    opacity: .8;
 }
 
 /* Make the footer responsive */
