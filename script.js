@@ -22,15 +22,32 @@ document.addEventListener('DOMContentLoaded', function () {
     const mobileMenu = document.querySelector('.mobile-menu');
 
     menuBtn.addEventListener('click', function () {
-        mobileMenu.style.display = 'block';
-        menuBtn.style.display = 'none';
-        closeBtn.style.display = 'block';
+        toggleMenu(true);
     });
-
+    
     closeBtn.addEventListener('click', function () {
-        mobileMenu.style.display = 'none';
-        menuBtn.style.display = 'block';
-        closeBtn.style.display = 'none';
+        toggleMenu(false);
+    });
+    
+    function toggleMenu(open) {
+        if (open) {
+            mobileMenu.style.display = 'block';
+            menuBtn.style.display = 'none';
+            closeBtn.style.display = 'block';
+        } else {
+            mobileMenu.style.display = 'none';
+            menuBtn.style.display = 'block';
+            closeBtn.style.display = 'none';
+        }
+    }
+    
+    // Close mobile menu on window resize if the screen is wider than 600px
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 600) {
+            mobileMenu.style.display = 'none';
+            menuBtn.style.display = 'block';
+            closeBtn.style.display = 'none';
+        }
     });
 });
 

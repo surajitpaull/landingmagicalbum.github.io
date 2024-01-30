@@ -17,20 +17,18 @@ body {
     z-index: 1000;
     transition: top .3s ease; /* Smooth transition effect */
 }
-.navbar.sticky {   
+.navbar.sticky {
     max-width: 100%;
-    border-radius: 0;
-    opacity: .6;
-}
-.navbar:hover {
-    /* Set full opacity when mouse hovers over the navbar */
-    opacity: 1;
+    border-radius: 0;    
+    transition: backdrop-filter 0.3s ease; 
+    
 }
 /* Show the navigation bar when scrolled up */
 
 .navbar.sticky ul {
-    border-radius: 0; /* Remove border radius when navbar becomes sticky */
+    border-radius: 0; 
     transition: all .5s ease;
+    
 }
 .navbar-main{    
     max-width: 100%;
@@ -38,9 +36,24 @@ body {
     background: #000000;
     height: 66px;
     display: flex;
-    align-items: center;
-    
+    align-items: center;       
 }
+@media screen and (min-width: 601px) {
+    .navbar.sticky .navbar-main {
+        background: rgba(0, 0, 0, 0.726); /* Change the background color when navbar becomes sticky */
+        backdrop-filter: blur(2px);
+        
+    }
+    .navbar:hover {  
+        opacity: 1;
+        background-color: #000;
+        border-radius: 50px;
+    }
+    .menu-container {
+        display: none;
+    }
+}
+
 .navbar ul {
     height: 86px;
     list-style-type: none;
@@ -373,6 +386,7 @@ h1{
         transition: none;
         margin-top: 20px;
     }
+
     .logo{
         padding: 0;
         margin-inline-end: auto;
@@ -663,18 +677,18 @@ footer p {
 .footer-left, .footer-right {
     display: inline-block;
     vertical-align: top;
-    width: calc(50% - 20px); /* Adjust for padding */
+    width: calc(50% - 20px); 
     padding: 0 10px;
-    box-sizing: border-box; /* Include padding in width calculation */
+    box-sizing: border-box; 
 }
 
 /* Company logo */
 .footer-left img {
     width: 100%;
-    max-width: 200px; /* Limit maximum width */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Remove bottom margin */
-    margin: 0 auto 20px; /* Center and add bottom margin */
+    max-width: 200px; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto 20px; 
 }
 
 /* Download button */
@@ -762,3 +776,18 @@ footer p {
         width: 100%;
     }
 }
+
+/* Original styles for navbar elements */
+.navbar-main a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 18px 30px;
+    text-decoration: none;
+    transition: background 0.3s; /* Smooth transition */
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+/* Change background color on hover */
