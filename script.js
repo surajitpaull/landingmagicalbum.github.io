@@ -51,6 +51,25 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    const menuContainer = document.querySelector('.menu-container');
+
+    // Hide menu container on big screens, show on small screens
+    function toggleMenuContainer() {
+        if (window.innerWidth > 600) {
+            menuContainer.style.display = 'none'; // Hide menu container on big screens
+        } else {
+            menuContainer.style.display = ''; // Show menu container on small screens
+        }
+    }
+
+    // Toggle menu container on page load
+    toggleMenuContainer();
+
+    // Toggle menu container on window resize
+    window.addEventListener('resize', toggleMenuContainer);
+});
+
 // toggleMenu
 
 document.addEventListener('DOMContentLoaded', function () {
