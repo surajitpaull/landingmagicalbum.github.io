@@ -16,6 +16,7 @@ body {
     top: 0;
     z-index: 1000;
     transition: top .3s ease; /* Smooth transition effect */
+    
 }
 .navbar.sticky {
     max-width: 100%;
@@ -47,10 +48,13 @@ body {
     .navbar:hover {  
         opacity: 1;
         background-color: #000;
-        border-radius: 50px;
+        
     }
     .menu-container {
         display: none;
+    }
+    .navbar{
+        border-radius: 50px;
     }
 }
 
@@ -770,14 +774,14 @@ footer p {
     opacity: .8;
 }
 
-/* Make the footer responsive */
+/* footer responsive */
 @media (max-width: 768px) {
     .footer-left, .footer-right {
         width: 100%;
     }
 }
 
-/* Original styles for navbar elements */
+/* original navbar style  */
 .navbar-main a {
     display: flex;
     align-items: center;
