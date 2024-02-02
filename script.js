@@ -116,3 +116,7 @@ async function replaceProfilePictures() {
 }
 
 replaceProfilePictures();
+
+
+// autoplay ios
+
