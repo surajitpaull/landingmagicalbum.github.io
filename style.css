@@ -795,3 +795,65 @@ footer p {
 }
 
 /* Change background color */
+
+
+/* shop section  */
+/* 
+.shop {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.shop-background {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.product {
+    
+}
+
+.product-frame {
+    position: relative;
+    width: 424.918px;
+    height: 307.609px;
+    border: 1px solid #ddd; 
+    box-sizing: border-box; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    padding: 20px; 
+}
+
+.product-img {
+    width: 424.918px;
+height: 372.781px; 
+}
+
+.star-rating {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    
+}
+
+.product-description {
+    text-align: center; 
+}
+
+.product-name {
+    font-weight: bold;
+}
+
+.price-details {
+    margin: 10px 0;
+}
+
+.order-now-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+} */
