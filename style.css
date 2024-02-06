@@ -704,8 +704,8 @@ footer p {
     padding: 10px 20px;
     border-radius: 5px;
     margin-bottom: 20px;
-    cursor: pointer; /* Change cursor on hover */
-    transition: background-color 0.3s ease; /* Smooth transition */
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
 }
 
 .footer-right button:hover {
@@ -739,7 +739,7 @@ footer p {
 .social-icons a {
     display: inline-block;
     margin: 0 10px; /* Adjust spacing between icons */
-    transition: transform 0.3s ease; /* Smooth transition */
+    transition: transform 0.3s ease; 
 }
 
 .social-icons a:hover {
@@ -782,7 +782,7 @@ footer p {
     }
 }
 
-/* original navbar style  */
+/* original navbar  */
 .navbar-main a {
     display: flex;
     align-items: center;
@@ -795,27 +795,72 @@ footer p {
     margin-right: 7px;
 }
 
-/* Change background color */
-
-
-
 /* shop section  */
+.shopping{
+    background-color: #c8ebff;
+    margin-top: 40px;
+    
+}
 
-/* Default styles */
-.shop-background {
+/* Base styles */
+
+.shop-heading {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    font-family: Poppins;
+    font-size: 64px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.1;
+    letter-spacing: -2.56px;
+    padding-top: 60px;
+    margin-bottom: 30px;
+}
+.shopcolor-head{
+    color: #0083d0;
+}
+
+.shopping-logo {
+    width: 70px; 
+    height: auto; 
+    margin-left: 10px;
+
+}
+@media screen and (max-width: 768px) {
+    .shop-heading {
+        flex-direction: row; 
+        justify-content: center;
+        align-items: center; 
+        font-size: 30px;
+        font-weight: 500;
+        letter-spacing: -.7px;
+        padding-top: 30px;
+        margin-bottom: -30px;
+    }
+
+    .shopping-logo {
+        width: 37px; 
+        height: auto; 
+        margin-left: 5px;
+    }
+}
+
+/* product styles */
+.shopping-background {
     display:flex;
     justify-content: center;
     gap: 50px;
     padding: 40px;
-    background-color: #a3cefc;
-    margin-top: 40px;
+    background-color: #c8ebff;
+    
 }
 
 .product-card {
     width: 424px; 
     min-width: 420px;
-    height: auto;
-    border: 1px solid #ddd; 
+    height: auto; 
     margin: 0 0 121.2px;
     border-radius: 32.6px;
     overflow: hidden; 
@@ -858,9 +903,10 @@ footer p {
 
 .product-price {
     color: #0E7B0E;     
-    margin-left: 10px;
+    margin-left: 15px;
     font-size: 30px;
     margin-top: -5px;
+    font-weight: 500;
 }
 
 .product-discounted-price {
@@ -904,7 +950,7 @@ footer p {
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
-    .shop-background {
+    .shopping-background {
         flex-direction: column;
         align-items: center;
         gap: 10px;
@@ -918,7 +964,7 @@ footer p {
     }
 }
 
-/* Add your default styles here */
+/* default styles */
 
 /* (mobile devices) */
 
@@ -928,7 +974,7 @@ footer p {
         font-size: 14px; 
     }
 
-    .shop-background {
+    .shopping-background {
         gap: 8px;
     }
     .product-card {
