@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style-checkout.css">
+<title>Checkout</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Checkout Page</h1>
+        <div class="product-details">
+            <img src="" alt="Product Image" id="productImage">
+            
+            <div class="size-options">
+                <input type="radio" id="small" name="size" value="Small">
+                <label for="small">S</label>
+                
+                <input type="radio" id="medium" name="size" value="Medium">
+                <label for="medium">M</label>
+                
+                <input type="radio" id="large" name="size" value="Large">
+                <label for="large">L</label>
+            </div>
+
+            <div class="details">
+                <p id="productName" class="product-name"></p>
+                <p id="discountPrice" class="discount-price"></p>
+                <p id="actualPrice" class="actual-price"></p>
+                <p id="discountPercentage" class="discount"></p>
+            </div>
+        </div>
+        
+
+        <!-- "Buy on WhatsApp" button -->
+        <a id="whatsappBtn" href="#" target="_blank" class="whatsapp-btn">Buy on WhatsApp</a>
+    </div>
+
+    <script src="script-checkout.js"></script>
+    <script>
+        // Retrieve product details from localStorage
+const productName = localStorage.getItem('productName');
+const discountPrice = localStorage.getItem('discountPrice');
+const actualPrice = localStorage.getItem('actualPrice');
+const discountPercentage = localStorage.getItem('discountPercentage');
+const imageSrc = localStorage.getItem('imageSrc');
+const sellerPhoneNumber = '7584028037'; // seller's phone number
+
+document.getElementById('productName').textContent = productName;
+document.getElementById('discountPrice').textContent = `Discount Price: ₹${discountPrice}`;
+document.getElementById('actualPrice').textContent = `Actual Price: ₹${actualPrice}`;
+document.getElementById('discountPercentage').textContent = `Discount Percentage: ${discountPercentage}%`;
+document.getElementById('productImage').src = imageSrc;
+
+// Get the size radio buttons
+const sizeInputs = document.querySelectorAll('.size-options input[type="radio"]');
+
+// Listen for change event on the size radio buttons
+sizeInputs.forEach(input => {
+    input.addEventListener('change', () => {
+        const selectedSize = document.querySelector('.size-options input[type="radio"]:checked').value;
+        // Update the WhatsApp message with the selected size
+        const whatsappMessage = `Hi, I'd like to buy ${productName} (${selectedSize}) for ₹${discountPrice} (${discountPercentage}% off).`;
+
+        // WhatsApp product details
+        let whatsappUrl = '';
+        const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+        if (isMobile) {
+            //  WhatsApp mobile app
+            whatsappUrl = `https://wa.me/${sellerPhoneNumber}/?text=${encodeURIComponent(whatsappMessage)}`;
+        } else {
+            //  web version WhatsApp
+            whatsappUrl = `https://web.whatsapp.com/send?phone=${sellerPhoneNumber}&text=${encodeURIComponent(whatsappMessage)}`;
+        }
+
+        // Set the "Buy on WhatsApp" 
+        document.getElementById('whatsappBtn').href = whatsappUrl;
+    });
+});
+
+    </script>
+    
+    
+    
+</body>
+</html>

@@ -120,3 +120,23 @@ replaceProfilePictures();
 
 // autoplay ios
 
+// shopping section 
+
+function redirectToCheckout(button) {
+    // product details 
+    const productName = button.dataset.productName;
+    const discountPrice = parseInt(button.dataset.discountPrice);
+    const actualPrice = parseInt(button.dataset.actualPrice);
+    const discountPercentage = parseInt(button.dataset.discountPercentage);
+    const imageSrc = button.dataset.imageSrc;
+
+    // For example, you can use localStorage to store the product details and retrieve them on the checkout page
+    localStorage.setItem('productName', productName);
+    localStorage.setItem('discountPrice', discountPrice);
+    localStorage.setItem('actualPrice', actualPrice);
+    localStorage.setItem('discountPercentage', discountPercentage);
+    localStorage.setItem('imageSrc', imageSrc);
+
+    // Redirect checkout page
+    window.location.href = 'checkout.html'; 
+}

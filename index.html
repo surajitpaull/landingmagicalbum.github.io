@@ -103,40 +103,85 @@
         </div>
     </section>
 
-    
-    <section class="shopping">
+    <!-- sopping  -->
+
+    <div class="shop-main">
+
         <div class="shop-heading">
             <p class="shopping-head">Our <span class="shopcolor-head">Products</span></p>
             <img src="assets/images/Gift.svg" alt="shoppingLog" class="shopping-logo">
         </div>
-        <div class="shopping-background">
-            <div class="product-card">
-                <div class="product-img-container">
-                    <img src="assets/images/product01.png" alt="Product Image" class="product-img">
+
+        <section class="shopping">
+            <button class="product" onclick="redirectToCheckout(this)" 
+            data-product-name="Sportify Photoframe" 
+            data-discount-price="499" 
+            data-actual-price="666" 
+            data-discount-percentage="25"
+            data-image-src="assets/images/product01.png">
+            <img class="frame-image" src="assets/images/product01.png" alt="Personalized Magic Photo">
+            <p class="product-details">Sportify Photoframe</p>
+            <div class="price-details">
+                <div class="prices">
+                    <p class="discount-price">₹499</p>
+                    <p class="actual-price">₹666</p>
                 </div>
-                <p class="product-name">Personalised Video Photo Frame</p>
-                <div class="product-details">  
-                    <p class="product-price">$499</p>
-                    <p class="product-discounted-price">$699</p>
-                    <button class="buy-btn"><p>Order Now</p></button>
-                </div>
+                <p class="discount">(25% off)</p>
             </div>
-            
-            <div class="product-card">
-                <div class="product-img-container">
-                    <img src="assets/images/product02.png" alt="Product Image" class="product-img">
+        </button>
+        <button class="product" onclick="redirectToCheckout(this)" 
+            data-product-name="Sportify Photoframe" 
+            data-discount-price="699" 
+            data-actual-price="899" 
+            data-discount-percentage="22"
+            data-image-src="assets/images/product02.png">
+            <img class="frame-image" src="assets/images/product02.png" alt="Personalized Magic Photo">
+            <p class="product-details">Sportify Photoframe</p>
+            <div class="price-details">
+                <div class="prices">
+                    <p class="discount-price">₹699</p>
+                    <p class="actual-price">₹899</p>
                 </div>
-                <p class="product-name">Personalised Video Photo Album</p>
-                <div class="product-details">  
-                    <p class="product-price">$499</p>
-                    <p class="product-discounted-price">$699</p>
-                    <button class="buy-btn"><p>Order Now</p></button>
-                </div>
+                <p class="discount">(22% off)</p>
             </div>
+        </button>
+        <button class="product" onclick="redirectToCheckout(this)" 
+            data-product-name="Sportify Photoframe" 
+            data-discount-price="499" 
+            data-actual-price="799" 
+            data-discount-percentage="20"
+            data-image-src="assets/images/product03.png">
+            <img class="frame-image" src="assets/images/product03.png" alt="Personalized Magic Photo">
+            <p class="product-details">Sportify Photoframe</p>
+            <div class="price-details">
+                <div class="prices">
+                    <p class="discount-price">₹499</p>
+                    <p class="actual-price">₹799</p>
+                </div>
+                <p class="discount">(20% off)</p>
+            </div>
+        </button>
+        <button class="product" onclick="redirectToCheckout(this)" 
+            data-product-name="Sportify Photoframe" 
+            data-discount-price="999" 
+            data-actual-price="1299" 
+            data-discount-percentage="22"
+            data-image-src="assets/images/product02.png">
+            <img class="frame-image" src="assets/images/product02.png" alt="Personalized Magic Photo">
+            <p class="product-details">Sportify Photoframe</p>
+            <div class="price-details">
+                <div class="prices">
+                    <p class="discount-price">₹999</p>
+                    <p class="actual-price">₹1299</p>
+                </div>
+                <p class="discount">(22% off)</p>
+            </div>
+        </button>
             
-            <!-- Add another product with the same structure if needed -->
-        </div>
-    </section>
+        </section>
+       
+        <!-- Repeat for other products -->
+    </div>
     
     
     <!-- footer section  -->
